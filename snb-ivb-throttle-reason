@@ -48,7 +48,7 @@ function check_required_commands
 
     local missing_count=0
     local required="${1}"
-    reaonly required
+    readonly required
 
     for c in ${required}; do
         if ! hash "${c}" >/dev/null 2>&1; then
